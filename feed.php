@@ -5,7 +5,7 @@
 	
 	$rss->load('https://www.cannabisculture.com/feed/');
 	$feed = array();
-	//echo "<pre>yyyyyyy"; print_r($rss->load('https://blog.feedspot.com/marijuana_rss_feeds/')); echo "</pre>"; exit;
+	
 	foreach ($rss->getElementsByTagName('item') as $node) {
 		$item = array ( 
 			'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
